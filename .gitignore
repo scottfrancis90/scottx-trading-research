@@ -1,0 +1,4 @@
+data/
+factory_runs/
+__pycache__/
+*.pyc

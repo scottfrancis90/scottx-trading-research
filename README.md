@@ -14,7 +14,7 @@ Smart Money Concepts (ICT order blocks, fair value gaps, Candle Range Theory, li
 - **Deriv synthetic indices are fair games.** Boom, Crash and Volatility indices behave as martingales: no drift, no volatility clustering, no exploitable pattern ([Findings 1-10](findings/README.md#deriv-synthetic-indices-boom-crash-volatility-flip)).
 - **ICT order blocks and FVGs, tested as written.** On H1 and H4 forex, a random zone does the same as an order block in most setups ([Findings 126-144](findings/README.md#smart-money-concepts-ict-order-blocks-fvg-crt-liquidity)).
 - **Candle Range Theory (CRT)** setups are statistically indistinguishable from random entries ([Finding 67](findings/067-candle-range-theory-the-full-study-the-setups-are-statistically-indist.md)).
-- **A genetic algorithm searched 62.7 million strategies on gold** and found nothing real. Twice it produced a "winner" that passed a holdout, and twice the winner turned out to be a lookahead bug ([Findings 74-86](findings/README.md#strategy-factory-genetic-algorithm-search-and-the-bugs-it-caught)). Those bugs, and how they were caught, are the most useful part of this repo for anyone building a backtester. [How the factory works](docs/STRATEGY_FACTORY.md).
+- **A genetic algorithm searched 62.7 million strategies on gold** and found nothing real. Twice it produced a "winner" that passed a holdout, and twice the winner turned out to be a lookahead bug ([Findings 74-86](findings/README.md#strategy-factory-genetic-algorithm-search-and-the-bugs-it-caught)). Those bugs, and how they were caught, are the most useful part of this repo for anyone building a backtester. [How the factory works](docs/STRATEGY_FACTORY.md), and [the code](factory/), runnable on synthetic data in four commands.
 - **Forex pairs that move opposite each other**: a correlation study with a GA search for mirrored groups, checked on years the search never saw ([report](reports/opposite-forex-pairs/)).
 
 ## How every test is run
@@ -37,6 +37,7 @@ reports/
   opposite-forex-pairs/    report (HTML, PDF, PNG), full pair table (CSV) and the script
 docs/METHODOLOGY.md        how the tests are designed, and the mistakes that taught it
 docs/STRATEGY_FACTORY.md   how the genetic-algorithm Strategy Factory works
+factory/                   the Strategy Factory code: engine, GA, gates, holdout, example vocabulary
 TOOLS.md                   the private indicators and EAs used alongside this research
 ```
 
