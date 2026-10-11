@@ -86,7 +86,7 @@ answered nothing. It therefore does **not** test the user's observation that
 CRT trades often arrive days later. A deeper limit - into the range body or a
 named level - plus a lower-timeframe market-structure-shift confirmation, are
 the two parts of the method still unmeasured. FVG-based entries were not
-built: CLAUDE.md forbids fair-value-gap features outright.
+built: the project rules forbid fair-value-gap features outright.
 
 **Prediction scorecard:** ideal-fill near −0.05 predicted, −0.122 measured
 (wrong, and worse than expected); CRT within 0.05 R of random on MFE−MAE
