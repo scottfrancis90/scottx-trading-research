@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>ScottX - Opposite Forex Pairs</title>
+<style>
+  :root { --red:#b3121b; --dark:#1b1b1f; --ink:#222; --mute:#666; --line:#e4e4e8; --bg:#f4f4f6; --grn:#1f7a3a; --blue:#3b4a7a; }
+  * { box-sizing:border-box; }
+  @page { size: A4 portrait; margin: 10mm; }
+  body { margin:0; width:1240px; background:var(--bg); color:var(--ink); font:14.5px/1.42 "Segoe UI", Arial, sans-serif; }
+  .hero { background:var(--red); color:#fff; padding:36px 56px 30px; position:relative; overflow:hidden; }
+  .hero:before { content:""; position:absolute; right:-80px; top:-120px; width:420px; height:420px; border-radius:50%; background:rgba(255,255,255,.07); }
+  .hero .brand { font-size:62px; font-weight:900; letter-spacing:-2px; line-height:1; }
+  .hero .brand span { font-weight:300; }
+  .hero .tag { margin-top:8px; font-size:18px; opacity:.92; }
+  .hero .meta { margin-top:18px; display:flex; gap:30px; font-size:13px; opacity:.85; }
+  .hero .meta b { display:block; font-size:20px; opacity:1; }
+  .wrap { padding:24px 56px 30px; }
+  .grid { display:grid; grid-template-columns:minmax(0,1.25fr) minmax(0,1fr); gap:18px; align-items:start; }
+  .card { overflow:hidden; background:#fff; border:1px solid var(--line); border-top:5px solid var(--red); border-radius:8px; padding:14px 18px 12px; break-inside:avoid; }
+  .card.grn { border-top-color:var(--grn); } .card.dark { border-top-color:var(--dark); }
+  .card h2 { margin:0 0 2px; font-size:19px; }
+  .card .sub { color:var(--mute); font-size:12.5px; margin-bottom:8px; }
+  table { width:100%; border-collapse:collapse; font-size:13.5px; }
+  th { text-align:right; font-size:11.5px; color:var(--mute); font-weight:600; padding:3px 6px; border-bottom:2px solid var(--line); }
+  th.l { text-align:left; }
+  td { padding:3px 6px; border-bottom:1px solid #f0f0f2; white-space:nowrap; }
+  td.r { text-align:right; font-family:Consolas, "Courier New", monospace; font-weight:700; color:var(--blue); }
+  .hi td.r { color:var(--red); }
+  .bar { display:inline-block; height:8px; background:currentColor; opacity:.22; border-radius:2px; margin-right:6px; vertical-align:middle; }
+  .rules { margin-top:18px; background:var(--dark); color:#eee; border-radius:8px; padding:16px 22px; break-inside:avoid; }
+  .rules h3 { margin:0 0 6px; color:#fff; font-size:16px; }
+  .rules ul { margin:0; padding-left:20px; font-size:13.5px; } .rules li { margin:4px 0; }
+  .why { font-size:13.5px; } .why p { margin:6px 0; }
+  .ex { font-family:Consolas, monospace; background:#f6f6f8; border-radius:6px; padding:8px 10px; font-size:12.5px; margin:6px 0; }
+  table.ga td { white-space:normal; } table.ga td.r { white-space:nowrap; width:62px; }
+  .foot { text-align:center; color:var(--mute); font-size:12px; padding:14px 0 0; }
+</style></head><body>
+<div class="hero">
+  <div class="brand">SCOTT<span>X</span></div>
+  <div class="tag">Forex pairs that move opposite each other</div>
+  <div class="meta"><div><b>28</b>major &amp; cross pairs</div><div><b>2017 - 2026</b>daily closes, Deriv MT5</div>
+  <div><b>66</b>opposite pairs found</div><div><b>-0.90</b>best GA group, unseen years</div></div>
+</div>
+<div class="wrap">
+<div class="grid">
+  <div class="card">
+    <h2>Most opposite pairs</h2>
+    <div class="sub">Correlation of daily moves: <b>-1</b> = perfect mirror, 0 = unrelated. Checked in three separate periods; last column = share of 60-day windows (2017-2026) in which the two moved opposite. Red = -0.70 or stronger in 2024-26.</div>
+    <table><tr><th class="l">Pair A</th><th></th><th class="l">Pair B</th><th>2017-20</th><th>2021-23</th><th>2024-26</th><th>Opposite 60d</th></tr>
+    <tr class="hi"><td><b>AUDCHF</b></td><td>vs</td><td><b>EURAUD</b></td><td class="r"><span class="bar" style="width:45px"></span>-0.85</td><td class="r"><span class="bar" style="width:42px"></span>-0.79</td><td class="r"><span class="bar" style="width:45px"></span>-0.84</td><td class="r">100%</td></tr>
+<tr class="hi"><td><b>EURUSD</b></td><td>vs</td><td><b>USDCHF</b></td><td class="r"><span class="bar" style="width:41px"></span>-0.77</td><td class="r"><span class="bar" style="width:40px"></span>-0.74</td><td class="r"><span class="bar" style="width:43px"></span>-0.80</td><td class="r">100%</td></tr>
+<tr class="hi"><td><b>EURNZD</b></td><td>vs</td><td><b>NZDCHF</b></td><td class="r"><span class="bar" style="width:44px"></span>-0.83</td><td class="r"><span class="bar" style="width:41px"></span>-0.77</td><td class="r"><span class="bar" style="width:43px"></span>-0.80</td><td class="r">100%</td></tr>
+<tr class="hi"><td><b>CADCHF</b></td><td>vs</td><td><b>EURCAD</b></td><td class="r"><span class="bar" style="width:44px"></span>-0.82</td><td class="r"><span class="bar" style="width:38px"></span>-0.71</td><td class="r"><span class="bar" style="width:38px"></span>-0.72</td><td class="r">100%</td></tr>
+<tr class="hi"><td><b>EURAUD</b></td><td>vs</td><td><b>NZDCHF</b></td><td class="r"><span class="bar" style="width:35px"></span>-0.66</td><td class="r"><span class="bar" style="width:33px"></span>-0.62</td><td class="r"><span class="bar" style="width:38px"></span>-0.70</td><td class="r">100%</td></tr>
+<tr class=""><td><b>AUDUSD</b></td><td>vs</td><td><b>USDCAD</b></td><td class="r"><span class="bar" style="width:33px"></span>-0.62</td><td class="r"><span class="bar" style="width:41px"></span>-0.77</td><td class="r"><span class="bar" style="width:37px"></span>-0.70</td><td class="r">100%</td></tr>
+<tr class=""><td><b>NZDUSD</b></td><td>vs</td><td><b>USDCAD</b></td><td class="r"><span class="bar" style="width:29px"></span>-0.54</td><td class="r"><span class="bar" style="width:37px"></span>-0.70</td><td class="r"><span class="bar" style="width:37px"></span>-0.69</td><td class="r">100%</td></tr>
+<tr class=""><td><b>AUDCHF</b></td><td>vs</td><td><b>GBPAUD</b></td><td class="r"><span class="bar" style="width:29px"></span>-0.55</td><td class="r"><span class="bar" style="width:31px"></span>-0.59</td><td class="r"><span class="bar" style="width:36px"></span>-0.68</td><td class="r">100%</td></tr>
+<tr class=""><td><b>AUDCAD</b></td><td>vs</td><td><b>EURAUD</b></td><td class="r"><span class="bar" style="width:27px"></span>-0.50</td><td class="r"><span class="bar" style="width:32px"></span>-0.60</td><td class="r"><span class="bar" style="width:36px"></span>-0.68</td><td class="r">100%</td></tr>
+<tr class=""><td><b>EURNZD</b></td><td>vs</td><td><b>NZDUSD</b></td><td class="r"><span class="bar" style="width:37px"></span>-0.69</td><td class="r"><span class="bar" style="width:37px"></span>-0.70</td><td class="r"><span class="bar" style="width:36px"></span>-0.68</td><td class="r">100%</td></tr>
+<tr class=""><td><b>GBPNZD</b></td><td>vs</td><td><b>NZDUSD</b></td><td class="r"><span class="bar" style="width:26px"></span>-0.49</td><td class="r"><span class="bar" style="width:30px"></span>-0.56</td><td class="r"><span class="bar" style="width:36px"></span>-0.68</td><td class="r">100%</td></tr>
+<tr class=""><td><b>EURNZD</b></td><td>vs</td><td><b>NZDCAD</b></td><td class="r"><span class="bar" style="width:29px"></span>-0.54</td><td class="r"><span class="bar" style="width:33px"></span>-0.63</td><td class="r"><span class="bar" style="width:36px"></span>-0.68</td><td class="r">100%</td></tr>
+<tr class=""><td><b>AUDUSD</b></td><td>vs</td><td><b>EURAUD</b></td><td class="r"><span class="bar" style="width:37px"></span>-0.69</td><td class="r"><span class="bar" style="width:38px"></span>-0.71</td><td class="r"><span class="bar" style="width:35px"></span>-0.67</td><td class="r">100%</td></tr>
+<tr class=""><td><b>EURGBP</b></td><td>vs</td><td><b>GBPCHF</b></td><td class="r"><span class="bar" style="width:45px"></span>-0.84</td><td class="r"><span class="bar" style="width:36px"></span>-0.68</td><td class="r"><span class="bar" style="width:35px"></span>-0.67</td><td class="r">100%</td></tr>
+<tr class=""><td><b>AUDUSD</b></td><td>vs</td><td><b>GBPAUD</b></td><td class="r"><span class="bar" style="width:26px"></span>-0.50</td><td class="r"><span class="bar" style="width:30px"></span>-0.56</td><td class="r"><span class="bar" style="width:35px"></span>-0.66</td><td class="r">100%</td></tr>
+<tr class=""><td><b>AUDJPY</b></td><td>vs</td><td><b>EURAUD</b></td><td class="r"><span class="bar" style="width:36px"></span>-0.68</td><td class="r"><span class="bar" style="width:31px"></span>-0.58</td><td class="r"><span class="bar" style="width:35px"></span>-0.65</td><td class="r">100%</td></tr>
+<tr class=""><td><b>AUDCAD</b></td><td>vs</td><td><b>GBPAUD</b></td><td class="r"><span class="bar" style="width:20px"></span>-0.39</td><td class="r"><span class="bar" style="width:28px"></span>-0.52</td><td class="r"><span class="bar" style="width:34px"></span>-0.64</td><td class="r">100%</td></tr>
+<tr class=""><td><b>GBPNZD</b></td><td>vs</td><td><b>NZDCAD</b></td><td class="r"><span class="bar" style="width:21px"></span>-0.40</td><td class="r"><span class="bar" style="width:30px"></span>-0.56</td><td class="r"><span class="bar" style="width:34px"></span>-0.63</td><td class="r">100%</td></tr>
+<tr class=""><td><b>GBPUSD</b></td><td>vs</td><td><b>USDCHF</b></td><td class="r"><span class="bar" style="width:23px"></span>-0.44</td><td class="r"><span class="bar" style="width:33px"></span>-0.61</td><td class="r"><span class="bar" style="width:34px"></span>-0.63</td><td class="r">100%</td></tr>
+<tr class=""><td><b>AUDCHF</b></td><td>vs</td><td><b>EURNZD</b></td><td class="r"><span class="bar" style="width:32px"></span>-0.61</td><td class="r"><span class="bar" style="width:33px"></span>-0.61</td><td class="r"><span class="bar" style="width:33px"></span>-0.62</td><td class="r">100%</td></tr>
+<tr class=""><td><b>GBPNZD</b></td><td>vs</td><td><b>NZDCHF</b></td><td class="r"><span class="bar" style="width:27px"></span>-0.51</td><td class="r"><span class="bar" style="width:31px"></span>-0.58</td><td class="r"><span class="bar" style="width:33px"></span>-0.62</td><td class="r">100%</td></tr>
+<tr class=""><td><b>EURUSD</b></td><td>vs</td><td><b>USDCAD</b></td><td class="r"><span class="bar" style="width:21px"></span>-0.40</td><td class="r"><span class="bar" style="width:30px"></span>-0.56</td><td class="r"><span class="bar" style="width:33px"></span>-0.62</td><td class="r">100%</td></tr>
+<tr class=""><td><b>AUDUSD</b></td><td>vs</td><td><b>EURNZD</b></td><td class="r"><span class="bar" style="width:25px"></span>-0.48</td><td class="r"><span class="bar" style="width:30px"></span>-0.56</td><td class="r"><span class="bar" style="width:31px"></span>-0.59</td><td class="r">100%</td></tr>
+<tr class=""><td><b>EURNZD</b></td><td>vs</td><td><b>NZDJPY</b></td><td class="r"><span class="bar" style="width:35px"></span>-0.66</td><td class="r"><span class="bar" style="width:30px"></span>-0.56</td><td class="r"><span class="bar" style="width:31px"></span>-0.59</td><td class="r">100%</td></tr></table>
+  </div>
+  <div>
+    <div class="card grn">
+      <h2>GA: groups that move opposite</h2>
+      <div class="sub">A genetic algorithm searched ~2,100 combinations of 1-3 pairs vs 1-3 pairs on <b>2017-21</b>; each pick re-checked on <b>2022-26</b>, which the GA never saw.</div>
+      <table class="ga" style="font-size:13px"><tr><th class="l">Group A</th><th></th><th class="l">Group B</th><th>2017-21</th><th>2022-26</th></tr>
+      <tr class="hi"><td><b>AUDUSD + CADCHF</b></td><td>vs</td><td><b>EURAUD + USDCAD</b></td><td class="r">-0.93</td><td class="r">-0.90</td></tr>
+<tr class="hi"><td><b>CADCHF + NZDUSD</b></td><td>vs</td><td><b>EURNZD + USDCAD</b></td><td class="r">-0.92</td><td class="r">-0.89</td></tr>
+<tr class="hi"><td><b>CADCHF + NZDUSD</b></td><td>vs</td><td><b>AUDNZD + EURAUD + USDCAD</b></td><td class="r">-0.92</td><td class="r">-0.88</td></tr>
+<tr class=""><td><b>CADCHF + GBPUSD</b></td><td>vs</td><td><b>EURGBP + USDCAD</b></td><td class="r">-0.91</td><td class="r">-0.83</td></tr>
+<tr class=""><td><b>AUDCHF</b></td><td>vs</td><td><b>EURAUD</b></td><td class="r">-0.86</td><td class="r">-0.80</td></tr>
+<tr class=""><td><b>GBPCHF</b></td><td>vs</td><td><b>EURGBP</b></td><td class="r">-0.83</td><td class="r">-0.65</td></tr></table>
+    </div>
+    <div class="card dark" style="margin-top:18px">
+      <h2>Why they move opposite</h2>
+      <div class="why">
+        <p>The two pairs share one currency, but on <b>opposite sides</b> of the quote.</p>
+        <div class="ex">EUR<b>AUD</b>  - AUD is the 2nd currency<br><b>AUD</b>CHF  - AUD is the 1st currency</div>
+        <p>When AUD strengthens, EURAUD falls and AUDCHF rises. The stronger the shared currency's own moves (USD, EUR, AUD, NZD, CHF), the closer the mirror.</p>
+        <p>Groups mirror better than single pairs because averaging two pairs cancels the currencies that are <i>not</i> shared.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="rules">
+  <h3>How to use it</h3>
+  <ul>
+    <li><b>Confirmation:</b> EURUSD breaking up should come with USDCHF breaking down. If the mirror pair does not follow, the move is weaker.</li>
+    <li><b>Risk:</b> long EURUSD + short USDCHF is nearly the SAME trade twice - count it as double size, not as two positions.</li>
+    <li><b>Not a free hedge:</b> buying both sides mostly cancels out while you pay two spreads and two swaps.</li>
+    <li><b>Relationships drift:</b> GBPUSD vs CADCHF went from 0.00 to -0.31 in 2024-26. Re-run <span style="font-family:Consolas">fx_opposite.py</span> every few months.</li>
+  </ul>
+</div>
+<div class="foot">ScottX research | data: Deriv MT5 daily closes 2017-2026 | full list: Opposite_Forex_Pairs.csv | generated 2026-10-09</div>
+</div></body></html>
