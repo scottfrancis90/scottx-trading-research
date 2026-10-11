@@ -17,6 +17,8 @@ Smart Money Concepts (ICT order blocks, fair value gaps, Candle Range Theory, li
 - **A genetic algorithm searched 62.7 million strategies on gold** and found nothing real. Twice it produced a "winner" that passed a holdout, and twice the winner turned out to be a lookahead bug ([Findings 74-86](findings/README.md#strategy-factory-genetic-algorithm-search-and-the-bugs-it-caught)). Those bugs, and how they were caught, are the most useful part of this repo for anyone building a backtester. [How the factory works](docs/STRATEGY_FACTORY.md), and [the code](factory/), runnable on synthetic data in four commands.
 - **Forex pairs that move opposite each other**: a correlation study with a GA search for mirrored groups, checked on years the search never saw ([report](reports/opposite-forex-pairs/)).
 
+- **Can machine learning predict gold?** A from-scratch ML study with a leak-proof pipeline, walk-forward validation and a test split read exactly once. The model lost to gold's own drift; the only significant result was "always long", which is the 2023-24 rally, not skill ([pureml](pureml/)).
+
 ## How every test is run
 
 1. **The rule is written down before the test.** No tuning on the result.
@@ -38,6 +40,7 @@ reports/
 docs/METHODOLOGY.md        how the tests are designed, and the mistakes that taught it
 docs/STRATEGY_FACTORY.md   how the genetic-algorithm Strategy Factory works
 factory/                   the Strategy Factory code: engine, GA, gates, holdout, example vocabulary
+pureml/                    the machine-learning study on gold: leak-proof pipeline R01-R11 and its results
 TOOLS.md                   the private indicators and EAs used alongside this research
 ```
 
